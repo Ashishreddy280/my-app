@@ -3,25 +3,38 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ParentComponent } from './parent/parent.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 import { HomeComponent } from './home/home.component';
-import { DashboradComponent } from './dashborad/dashborad.component';
-import { LoginComponent } from './login/login.component';
-import { ServicesComponent } from './services/services.component';
-import { ErrorComponent } from './error/error.component';
+import { DatabindingComponent } from './databinding/databinding.component';
+import { CalculatorComponent } from './calculator/calculator.component';
+import { RectangleComponent } from './rectangle/rectangle.component';
+import { CircleComponent } from './circle/circle.component';
+import { BmiComponent } from './bmi/bmi.component';
+import { DataBindingComponent } from './data-binding/data-binding.component';
+import { FormsModule } from '@angular/forms';
+
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    ParentComponent,
+    WelcomeComponent,
     HomeComponent,
-    DashboradComponent,
-    LoginComponent,
-    ServicesComponent,
-    ErrorComponent
+    DatabindingComponent,
+    CalculatorComponent,
+    RectangleComponent,
+    CircleComponent,
+    BmiComponent,
+    DataBindingComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
