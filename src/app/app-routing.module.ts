@@ -9,13 +9,15 @@ import { RectangleComponent } from './rectangle/rectangle.component';
 import { CircleComponent } from './circle/circle.component';
 import { BmiComponent } from './bmi/bmi.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
+import { DirectivesComponent } from './directives/directives.component';
 
 
 const routes: Routes = [{path:'parent',component:ParentComponent, children:[{path:'welcome', component:WelcomeComponent},{path:'home', component:HomeComponent},
   {path:'calculator', component:CalculatorComponent},
   {path:'rectangle', component:RectangleComponent},
   {path:'circle', component:CircleComponent},
-  {path:'bmi', component:BmiComponent},{path:'data-binding', component:DataBindingComponent}]},
+  {path:'bmi', component:BmiComponent},{path:'data-binding', component:DataBindingComponent}
+,{path:'directives', component:DirectivesComponent}]},
 
 
   

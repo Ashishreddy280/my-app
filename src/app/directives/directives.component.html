@@ -1,0 +1,31 @@
+<!-- <p>directives works!</p> -->
+ <div class="parent"><h1>Directives</h1>
+ <h5 *ngFor="let age of ages">{{age}}</h5>
+ <ol>
+    <li *ngFor="let age of ages">{{age}}</li>
+ </ol>
+
+
+<select>
+    <option *ngFor="let state of states">{{state}}</option>
+</select>
+
+<table border="2">
+    <thead>
+    <tr>
+        <th> Product Name</th>
+        <th>Product Price</th>
+        <th>Product rating</th>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let product of products">
+        <td>{{product.name}}</td>
+        <td [ngStyle]="{'color':product.price<4000?'red':'green'}">{{product.price}}</td>
+        <td [ngClass]="{'green':product.rating==5.0,'red':((product.rating>2.5)&&(product.rating<=4.9)) ,'blue':product.rating<2.5}">{{product.rating}}</td>
+    </tr>
+</tbody>
+</table></div>
+
+<h1 *ngIf="true">welcome to Mohoith IT</h1>
+<h1 *ngIf="false">MOhith IT is located in warangal</h1>

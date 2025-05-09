@@ -13,6 +13,7 @@ import { CircleComponent } from './circle/circle.component';
 import { BmiComponent } from './bmi/bmi.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { FormsModule } from '@angular/forms';
+import { DirectivesComponent } from './directives/directives.component';
 
 
 
@@ -29,6 +30,7 @@ import { FormsModule } from '@angular/forms';
     CircleComponent,
     BmiComponent,
     DataBindingComponent,
+    DirectivesComponent,
     
   ],
   imports: [
