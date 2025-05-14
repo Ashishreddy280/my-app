@@ -10,6 +10,9 @@ import { CircleComponent } from './circle/circle.component';
 import { BmiComponent } from './bmi/bmi.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { VehiclesComponent } from './vehicles/vehicles.component';
+import { FlipkartComponent } from './flipkart/flipkart.component';
+import { MailComponent } from './mail/mail.component';
 
 
 const routes: Routes = [{path:'parent',component:ParentComponent, children:[{path:'welcome', component:WelcomeComponent},{path:'home', component:HomeComponent},
@@ -17,7 +20,9 @@ const routes: Routes = [{path:'parent',component:ParentComponent, children:[{pat
   {path:'rectangle', component:RectangleComponent},
   {path:'circle', component:CircleComponent},
   {path:'bmi', component:BmiComponent},{path:'data-binding', component:DataBindingComponent}
-,{path:'directives', component:DirectivesComponent}]},
+,{path:'directives', component:DirectivesComponent},
+{path:'vehicles', component:VehiclesComponent},{path:'flipkart', component:FlipkartComponent},
+{path:'mail', component:MailComponent}]},
 
 
   

@@ -14,6 +14,10 @@ import { BmiComponent } from './bmi/bmi.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { FormsModule } from '@angular/forms';
 import { DirectivesComponent } from './directives/directives.component';
+import { VehiclesComponent } from './vehicles/vehicles.component';
+import {HttpClientModule} from '@angular/common/http';
+import { FlipkartComponent } from './flipkart/flipkart.component';
+import { MailComponent } from './mail/mail.component';
 
 
 
@@ -31,12 +35,16 @@ import { DirectivesComponent } from './directives/directives.component';
     BmiComponent,
     DataBindingComponent,
     DirectivesComponent,
+    VehiclesComponent,
+    FlipkartComponent,
+    MailComponent,
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
